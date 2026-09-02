@@ -1,0 +1,13 @@
+x <- c(200,300,400,600,1000)
+
+minmax <- (x-min(x))/(max(x)-min(x))
+print(minmax)
+
+zscore <- scale(x)
+print(zscore)
+
+mad.norm <- (x-mean(x))/mad(x)
+print(mad.norm)
+
+decimal <- x/1000
+print(decimal)
