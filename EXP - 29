@@ -1,0 +1,22 @@
+marks <- c(55,60,71,63,55,65,50,55,58,
+           59,61,63,65,67,71,72,75)
+
+marks <- sort(marks)
+
+# Equal-frequency
+eq_freq <- split(marks, ceiling(seq_along(marks)/6))
+print(eq_freq)
+
+# Equal-width
+breaks <- seq(min(marks), max(marks), length.out=4)
+eq_width <- cut(marks, breaks, include.lowest=TRUE)
+print(eq_width)
+
+# Clustering
+cluster <- kmeans(marks, centers=3)
+print(cluster$cluster)
+
+# Histogram
+hist(marks,
+     main="Marks Distribution",
+     xlab="Marks")
