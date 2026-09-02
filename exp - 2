@@ -1,0 +1,16 @@
+good <- 0.45
+bad <- 0.55
+
+# Expansion
+expand <- (7*good) + (3*bad) - 2
+
+# No expansion
+no_expand <- (4*good) + (1.5*bad)
+
+print(expand)
+print(no_expand)
+
+if(expand > no_expand)
+    print("Expand the Factory")
+else
+    print("Do Not Expand the Factory")
