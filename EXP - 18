@@ -1,0 +1,14 @@
+x <- 35
+
+# Min-Max
+minmax <- (x-20)/(60-20)
+
+# Z-Score
+zscore <- (x-40)/12.94
+
+# Decimal Scaling
+decimal <- x/100
+
+cat("Min-Max =",minmax,"\n")
+cat("Z-Score =",zscore,"\n")
+cat("Decimal Scaling =",decimal,"\n")
