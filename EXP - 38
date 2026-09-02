@@ -1,0 +1,18 @@
+# Part A
+min_value <- 50000
+max_value <- 100000
+v <- 80000
+
+minmax <- (v-min_value)/(max_value-min_value)
+print(minmax)
+
+# Part B
+x <- c(200,300,400,600,1000)
+
+# Min-Max Normalization
+minmax <- (x-min(x))/(max(x)-min(x))
+print(minmax)
+
+# Z-Score Normalization
+zscore <- (x-mean(x))/sd(x)
+print(zscore)
