@@ -1,0 +1,13 @@
+data <- read.csv("diabetes.csv")
+
+plot(data$Age,data$BloodPressure,
+main="Blood Pressure vs Age",
+xlab="Age",
+ylab="Blood Pressure",
+col="blue",
+pch=19)
+
+barplot(data$BloodPressure,
+names.arg=data$Age,
+col="green",
+main="Blood Pressure by Age")
