@@ -1,0 +1,22 @@
+age <- c(23,27,28,30,31,32,33,35,36,38,
+         40,41,43,45,46,48,50,52)
+
+fat <- c(12,15,14,18,20,19,22,21,24,23,
+         25,27,26,29,30,31,32,34)
+
+cat("Age Mean:",mean(age),"\n")
+cat("Age Median:",median(age),"\n")
+cat("Age SD:",sd(age),"\n")
+
+cat("Fat Mean:",mean(fat),"\n")
+cat("Fat Median:",median(fat),"\n")
+cat("Fat SD:",sd(fat),"\n")
+
+boxplot(age, fat, names=c("Age","Fat"),
+        main="Boxplot")
+
+plot(age,fat,main="Age vs Body Fat",
+     xlab="Age",ylab="% Fat")
+
+qqnorm(age)
+qqline(age)
