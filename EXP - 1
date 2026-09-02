@@ -1,0 +1,14 @@
+data <- c(5,10,11,13,15,35,50,55,72,92,204,215)
+
+# Equal-frequency partitioning
+eq_freq <- split(data, ceiling(seq_along(data)/4))
+print(eq_freq)
+
+# Equal-width partitioning
+breaks <- seq(min(data), max(data), length.out=4)
+eq_width <- cut(data, breaks, include.lowest=TRUE)
+print(eq_width)
+
+# Clustering
+cluster <- kmeans(data, centers=3)
+print(cluster$cluster)
