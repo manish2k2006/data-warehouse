@@ -1,0 +1,11 @@
+speed <- c(78,81,82,74,83,82,77,80,70)
+
+time <- c(39,37,36,42,35,36,40,38,46)
+
+# Standard Deviation
+cat("Speed SD =", sd(speed), "\n")
+cat("Time SD =", sd(time), "\n")
+
+# Variance
+cat("Speed Variance =", var(speed), "\n")
+cat("Time Variance =", var(time), "\n")
