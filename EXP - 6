@@ -1,0 +1,9 @@
+data <- read.csv("diabetes.csv")
+
+# Linear Regression
+model1 <- lm(Outcome ~ Age, data=data)
+summary(model1)
+
+# Multiple Regression
+model2 <- lm(Outcome ~ Age + Glucose + BloodPressure, data=data)
+summary(model2)
