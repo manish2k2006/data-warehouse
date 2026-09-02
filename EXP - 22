@@ -1,0 +1,6 @@
+points <- c(45,50,52,55,60,62,65,70,72,100)
+
+boxplot(points,
+        main="Points Scored by Players",
+        ylab="Points",
+        col="lightblue")
