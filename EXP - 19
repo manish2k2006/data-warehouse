@@ -1,0 +1,15 @@
+data <- data.frame(
+Income=c(15,20,25,30,35,40,50,60,70,80),
+Score=c(39,81,6,77,40,76,20,55,75,10)
+)
+
+model <- kmeans(data, centers=5)
+
+print(model$cluster)
+
+plot(data$Income,data$Score,
+     col=model$cluster,
+     pch=19,
+     main="Customer Segmentation",
+     xlab="Annual Income",
+     ylab="Spending Score")
