@@ -1,0 +1,11 @@
+vegetarian <- c("yes","yes","yes","no","yes",
+                "no","no","yes","yes","yes")
+
+count <- table(vegetarian)
+
+print(count)
+
+if(count["yes"] > count["no"])
+  print("Vegetarians are greater")
+else
+  print("Non-Vegetarians are greater")
